@@ -22,7 +22,7 @@
     "DATABASE_URL": {
       "description": "The URL of the PostgreSQL database.",
       "value": "",
-      "required": true
+      "required": false
     },
     "MONGO_URL": {
       "description": "The URL of the MongoDB database.",
