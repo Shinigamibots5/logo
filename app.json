@@ -1,0 +1,28 @@
+{
+  "name": "telegram-logo-bot",
+  "description": "A Telegram bot to generate logos based on user requests",
+  "repository": "https://github.com/your-github-username/telegram-logo-bot",
+  "keywords": ["telegram", "bot", "logo"],
+
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "TELEGRAM_TOKEN": {
+      "description": "Telegram Bot API token",
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
