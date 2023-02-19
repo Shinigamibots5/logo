@@ -16,7 +16,7 @@
     },
     "OPENAI_API_KEY": {
       "description": "The OpenAI API key.",
-      "value": "",
+      "value": "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",
       "required": true
     },
     "DATABASE_URL": {
