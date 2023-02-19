@@ -3,10 +3,6 @@
   "description": "A Telegram bot that generates logos using AI.",
   "repository": "https://github.com/your-username/logo-bot",
   "image": "heroku/python",
-  "addons": [
-    "heroku-postgresql",
-    "mongolab:sandbox"
-  ],
   "buildpacks": [
     {
       "url": "heroku/python"
@@ -15,6 +11,7 @@
   "env": {
     "TELEGRAM_BOT_TOKEN": {
       "description": "The Telegram bot token.",
+      "value": "5322382737:AAGWqY21L-mw_hPIbUF8sze_HrT9wEdDtGw"
       "required": true
     },
     "OPENAI_API_KEY": {
@@ -34,7 +31,15 @@
       "required": true
     }
   },
-  "scripts": {
-    "start": "python bot.py"
-  }
+    "buildpacks": [
+        { 
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
 }
