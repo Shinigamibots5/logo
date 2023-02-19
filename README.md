@@ -63,3 +63,6 @@ Here are the available commands for the bot:
 /dc: Shows which data center the bot is using
 /broadcast <message>: Sends a message to all users (only the bot owner can use this command).
 ```
+
+## 📤 Deploy
+<p><a href="https://heroku.com/deploy?template=https://github.com/Shinigamibots5/logo"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
