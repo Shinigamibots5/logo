@@ -32,5 +32,13 @@ TOKEN = '<YOUR BOT TOKEN>'
 
 **Commands**
 
-/logo text - Generates a logo based on the given text. The bot will reply with the generated logo image.
-
+Here are the available commands for the bot:
+```
+/logo <text>: Generates a logo with the specified text.
+/status: Shows the current status of the bot.
+/about: Shows information about the bot.
+/help: Shows help information for the bot.
+/start: Starts the conversation with the bot.
+/dc: Shows which data center the bot is using
+/broadcast <message>: Sends a message to all users (only the bot owner can use this command).
+```
