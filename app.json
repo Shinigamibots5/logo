@@ -1,28 +1,40 @@
 {
-  "name": "telegram-logo-bot",
-  "description": "A Telegram bot to generate logos based on user requests",
-  "repository": "https://github.com/your-github-username/telegram-logo-bot",
-  "keywords": ["telegram", "bot", "logo"],
-
+  "name": "logo-bot",
+  "description": "A Telegram bot that generates logos using AI.",
+  "repository": "https://github.com/your-username/logo-bot",
+  "image": "heroku/python",
+  "addons": [
+    "heroku-postgresql",
+    "mongolab:sandbox"
+  ],
   "buildpacks": [
     {
       "url": "heroku/python"
     }
   ],
   "env": {
-    "TELEGRAM_TOKEN": {
-      "description": "Telegram Bot API token",
+    "TELEGRAM_BOT_TOKEN": {
+      "description": "The Telegram bot token.",
+      "required": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "The OpenAI API key.",
+      "required": true
+    },
+    "DATABASE_URL": {
+      "description": "The URL of the PostgreSQL database.",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "The URL of the MongoDB database.",
+      "required": true
+    },
+    "BOT_OWNER_ID": {
+      "description": "The Telegram ID of the bot owner.",
       "required": true
     }
   },
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "eco"
-    },
-    "worker": {
-      "quantity": 1,
-      "size": "eco"
-    }
+  "scripts": {
+    "start": "python bot.py"
   }
 }
