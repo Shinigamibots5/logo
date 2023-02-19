@@ -16,18 +16,22 @@
     },
     "OPENAI_API_KEY": {
       "description": "The OpenAI API key.",
+      "value": "",
       "required": true
     },
     "DATABASE_URL": {
       "description": "The URL of the PostgreSQL database.",
+      "value": "",
       "required": true
     },
     "MONGO_URL": {
       "description": "The URL of the MongoDB database.",
+      "value": "mongodb+srv://ticel98214:asdfggjkl@cluster0.hm6jsk4.mongodb.net/?retryWrites=true&w=majority",
       "required": true
     },
     "BOT_OWNER_ID": {
       "description": "The Telegram ID of the bot owner.",
+      "value": "Bae_wafa",
       "required": true
     }
   },
