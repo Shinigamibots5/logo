@@ -21,6 +21,27 @@ To get an OpenAI API key, you can follow these steps:
 - Follow the prompts to create an account and sign up for the OpenAI API service.
 - Once you have signed up, you will be provided with an API key. Keep this key safe, as it will be needed to authenticate your requests to the OpenAI API.
 
+**Telegram bot token**
+To get a Telegram bot token, you will need to create a new bot on Telegram. Here's how to do it:
+
+- Open Telegram app or go to Telegram Web.
+- Search for BotFather and start a chat with it.
+- Type /newbot and follow the instructions to create a new bot.
+- BotFather will give you a token that you can use to authenticate your bot.
+
+**MongoDB URL**
+To get the MongoDB URL and database name, you will need to create a new MongoDB database. Here's how to do it:
+
+- Sign up for a free MongoDB account on the MongoDB website.
+To get the MongoDB URL and database name, you will need to create a new MongoDB database. Here's how to do it:
+
+- Create a new project and cluster.
+- Click on the "Connect" button for your cluster.
+- Choose "Connect Your Application" and select "Python" as the driver.
+- Copy the connection string provided, which includes the MongoDB URL and database name.
+
+
+
 **Usage**
 
 - Clone the repository: git clone https://github.com/yourusername/telegram-logo-bot.git
