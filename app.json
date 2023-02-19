@@ -31,7 +31,7 @@
     },
     "BOT_OWNER_ID": {
       "description": "The Telegram ID of the bot owner.",
-      "value": "Bae_wafa",
+      "value": "876982417",
       "required": true
     }
   },
