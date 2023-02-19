@@ -11,7 +11,7 @@
   "env": {
     "TELEGRAM_BOT_TOKEN": {
       "description": "The Telegram bot token.",
-      "value": "5322382737:AAGWqY21L-mw_hPIbUF8sze_HrT9wEdDtGw"
+      "value": "5322382737:AAGWqY21L-mw_hPIbUF8sze_HrT9wEdDtGw",
       "required": true
     },
     "OPENAI_API_KEY": {
@@ -31,15 +31,10 @@
       "required": true
     }
   },
-    "buildpacks": [
-        { 
-            "url": "heroku/python"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "eco"
-        }
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
     }
+  }
 }
